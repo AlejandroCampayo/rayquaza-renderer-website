@@ -22,11 +22,34 @@
 					<p>A project developed for 
 						<a href="https://graphics.cg.uni-saarland.de/courses/cg1-2024/index.html">Computer Graphics Saarland University</a>
 					</p>
-					<ul class="actions" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-						<img src="images/rayquaza_pixel_left.png" alt="Left Image" style="width: 400px; height: auto;">
+					<ul class="actions rayquaza-container">
+						<img src="images/rayquaza_pixel_left.png" alt="Left Image" class="rayquaza-image">
 						<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						<img src="images/rayquaza_pixel_right.png" alt="Right Image" style="width: 400px; height: auto;">
+						<img src="images/rayquaza_pixel_right.png" alt="Right Image" class="rayquaza-image">
 					</ul>
+					<style>
+						.rayquaza-container {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							gap: 10px;
+						}
+					
+						.rayquaza-image {
+							width: 400px;
+							height: auto;
+						}
+					
+						@media (max-width: 768px) {
+							.rayquaza-container {
+								flex-direction: column;
+							}
+					
+							.rayquaza-image {
+								width: 90%; /* Adjust width for smaller screens */
+							}
+						}
+					</style>
 				</div>
 				
 
