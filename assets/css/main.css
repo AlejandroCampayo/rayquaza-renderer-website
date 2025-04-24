@@ -4682,3 +4682,11 @@ input, select, textarea {
 		}
 
 	}
+
+	@media screen and (max-width: 980px) {
+		.button.icon.solo {
+			width: 3rem; /* Adjust width for smaller screens */
+			height: 3rem; /* Adjust height for smaller screens */
+			line-height: 3rem; /* Match the height */
+		}
+	}
